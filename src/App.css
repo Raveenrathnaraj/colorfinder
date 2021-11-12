@@ -1,38 +1,92 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  font-size: 3rem;
+  margin: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  margin: 1px 0 1px 1px;
+  padding: 0 10px 0 19px;
+  border-color: darkblue;
+  width: 270px;
+  height: 44px;
+  border-radius: 24px;
+  background-color: transparent;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 10%;
+  justify-content: space-around;
+}
+
+.searchBox {
+  margin-bottom: 5%;
+}
+
+.card {
+  flex: 1 0 50px;
+  box-sizing: border-box;
+  margin: 1rem .25em;
+  padding: 10px;
+  max-width: 200px;
+  min-width: 170px;
+}
+
+.card:hover {
+  transform: scale(1.3);
+}
+
+button:hover {
+  background-color: aqua;
+}
+
+.or-img {
+  width: 50px;
+  height: 50px;
+}
+
+.bg-img { 
+  background-size: cover;
+  min-height: 180px;
+  background-position: center;
+  background-color: #ccc;
+}
+
+.content {
+  padding: 15px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #2196F3;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
